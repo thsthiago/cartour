@@ -1,0 +1,204 @@
+main{
+ width: 100%;
+ max-width: 1100px;
+ margin: 0 auto;
+ margin-top: 30px;
+ padding-bottom: 40px;
+}
+
+main .title h1{
+  font-family: 'Audiowide', cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title{
+  position: relative;
+}
+
+.title a{
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+.title i{
+  padding-right: 5px;
+}
+
+.title p{
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  font-weight: bold;
+  color: #54c011;
+}
+
+.filtro{
+  width: 100px;
+  padding: 3px 0px;
+  position: relative;
+  left: 40px;
+  margin-bottom: 15px;
+}
+
+.filtro p{
+  font-size: 17px;
+  padding: 10px 3px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  align-items: center;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+
+.filtro p i{
+  margin-left: 4px;
+  color: red;
+  font-size: 17px;
+}
+
+.filtrar{
+  position: absolute;
+  z-index: 2;
+  width: 170px;
+  top: 45px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+  background-color: white;
+  border-radius: 0px 8px 8px 8px;
+  box-shadow: 5px 7px 23px -8px rgba(0,0,0,0.9);
+  visibility: hidden;  
+}
+
+.filtrar label{
+  margin-bottom: 7px;
+  padding: 3px 5px;
+  position: relative;
+  padding-left: 23px;
+}
+
+.filtrar input[type="radio"]{
+  display: none;
+
+}
+
+.filtrar span{
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  border: 2px solid black; 
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+}
+
+.filtrar span:after{
+  content: "";
+  height: 7px;
+  width: 7px;
+  background-color: red;
+  display: block;
+  position: absolute;
+  left: 26%;
+  top: 20%;
+  border-radius: 50%;
+  transform: scale(0);
+  z-index: 2;
+}
+
+.filtrar input[type="radio"]:checked + span:after{
+  transform: scale(1);
+}
+
+.invisible{
+  visibility: hidden;
+  height: 0;
+}
+
+.visible{
+  visibility: visible;
+  height: 110px;
+}
+
+.cadastrados{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box{
+  margin: 1.6%;
+  width: 30%;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 5px 7px 23px -8px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  position: relative;
+  height: 370px;
+}
+
+.box p{
+  padding: 2px 0;
+}
+
+.forms{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 15px 10px;
+}
+
+form{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form button[name="deletar"],
+form button[name="alterar"]{
+  padding: 10px 0;
+  width: 80%;
+  border: none;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+form button[name="deletar"]{
+  background-color: #dd2d2d;
+  border-bottom: 2px solid #881111;
+}
+
+form button[name="deletar"]:hover{
+  background-color: #c62828;
+}
+
+form button[name="alterar"]{
+  background-color: #00e676 ;
+  border-bottom: 2px solid green;
+}
+
+form button[name="alterar"]:hover{
+  background-color: #04c769 ;
+}

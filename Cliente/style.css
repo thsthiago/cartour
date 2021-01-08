@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+}
+
+header{
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1{
+  text-shadow: 5px 0px black;
+  letter-spacing: 6px;
+  font-size: 45px;
+  font-family: 'Audiowide', cursive;
+  margin-bottom: 10px;
+}
+
+header h1 span{
+  color: red;
+  text-shadow: 5px 0px red;
+}
+
+.title-cadastro{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.cadastro{
+  font-family: 'Audiowide', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+form{
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+form input{
+  margin-bottom: 15px;
+  width: 100%; 
+}
+
+input[name="cpf"]:-webkit-inner-spin-button,
+input[name="telefone"]:-webkit-inner-spin-button,
+input[name="celular"]:-webkit-inner-spin-button,
+input[name="cep"]:-webkit-inner-spin-button,
+input[name="numerocasa"]:-webkit-inner-spin-button,
+input[name="numeroap"]:-webkit-inner-spin-button{display: none};
+
+input[name="ddd"]::inner-spin-button{display:none}
+

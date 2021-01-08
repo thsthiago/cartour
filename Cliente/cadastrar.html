@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastre-se</title>
+
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+	</head>
+	<h1></h1>
+
+	<body>
+				<header>
+					<h1>Car<span>Tour</span></h1>
+				</header>
+
+
+				<div class="title-cadastro">
+					<h1> Cadastros de Clientes </h1>
+				</div>	
+
+				
+				<form action="formcliente.php" method="GET">
+
+					<!--nome-->
+					<input type="text" name="nome" placeholder="Nome" maxlength="50">
+					<br>
+					Data de Nascimento
+					<!--Data de nascimento-->
+                	<input type="date" name="data">  
+        			<br>
+        			<!--CPF-->
+					<input type="number" name="cpf" placeholder="CPF" maxlength="15">			
+					<br>
+					<!--E-mail-->
+					<input type="email" name="email" placeholder="E-mail" maxlength="50">	
+					<br>
+					<!--DDD-->
+					<input type="number" name="ddd" placeholder="DDD" maxlength="2">
+					<br>
+					<!--Telefone-->
+					<input type="number" name="telefone" placeholder="Telefone" maxlength="8">
+					<br>
+					<!--Celular-->
+					<input type="number" name="celular" placeholder="Celular" maxlength="9">
+					<br>
+					<!--Estado-->
+					<input type="text" name="estado" placeholder="Estado" maxlength="20">
+					<br>
+					<!--Cidade-->
+					<input type="text" name="cidade" placeholder="Cidade" maxlength="30">
+					<br>
+					<!--Bairro-->
+					<input type="text" name="bairro" placeholder="Bairro" maxlength="30">
+					<br>
+					<!--CEP-->
+					<input type="number" name="cep" placeholder="CEP" maxlength="9">
+					<br>
+					<!--Endereço-->
+					<input type="text" name="endereco" placeholder="Endereço" maxlength="50">
+					<br>
+					<!--numeroCasa-->
+					<input type="number" name="numerocasa" placeholder="Numero da Casa" maxlength="4">
+					<br>
+					<!--NumeroAP-->
+					<input type="number" name="numeroap" placeholder="Numero do Apartamento" maxlength="5">
+					<br>
+
+					<div id="Cadastrar">
+						<a href="listagem.php"><input type="submit" for="checkbox" value="Cadastrar"></a>
+					</div>
+				</form>
+				
+
+			</div>	
+		</div>
+          
+
+
+	</body>
+</html>
